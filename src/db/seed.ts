@@ -23,6 +23,11 @@ await db.insert(users).values([
     email: faker.internet.email(),
     role: 'customer',
   },
+  {
+    name: faker.person.fullName(),
+    email: faker.internet.email(),
+    role: 'customer',
+  },
 ])
 
 console.log(chalk.yellow('Created customers'))
